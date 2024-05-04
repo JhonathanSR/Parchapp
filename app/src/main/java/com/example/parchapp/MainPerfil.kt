@@ -19,8 +19,8 @@ class MainPerfil : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Ant = findViewById<ImageView>(R.id.img_Ant)
-        img_Ant.setOnClickListener {
+        var img_Anterior = findViewById<ImageView>(R.id.img_Anterior)
+        img_Anterior.setOnClickListener {
             goAnterior()
         }
         var btn_Inicio = findViewById<Button>(R.id.btn_Inicio)
@@ -37,7 +37,7 @@ class MainPerfil : AppCompatActivity() {
         startActivity(i)
     }
     private fun goInicio(){
-        val i = Intent(this, MainActivity::class.java)
+        val i = Intent(this, MainMenu::class.java)
         startActivity(i)
 
     }

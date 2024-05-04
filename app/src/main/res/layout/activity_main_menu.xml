@@ -5,33 +5,47 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/system_accent2_900"
+    android:background="#011127"
     tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="63dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Exit" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="206dp"
         android:layout_height="36dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="144dp"
         android:fontFamily="casual"
         android:text="¿Qué hay pa' hacer?"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_Musica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/white"
         android:fontFamily="monospace"
         android:text="Música"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/btn_Cultura"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
@@ -39,7 +53,7 @@
         android:id="@+id/btn_Cultura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="72dp"
         android:backgroundTint="@color/white"
         android:fontFamily="monospace"
@@ -50,8 +64,8 @@
 
     <Button
         android:id="@+id/btn_Restau"
-        android:layout_width="159dp"
-        android:layout_height="54dp"
+        android:layout_width="157dp"
+        android:layout_height="51dp"
         android:layout_marginTop="28dp"
         android:backgroundTint="@color/white"
         android:fontFamily="monospace"
@@ -66,7 +80,7 @@
         android:id="@+id/btn_Deportes"
         android:layout_width="127dp"
         android:layout_height="54dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="52dp"
         android:backgroundTint="@color/white"
         android:fontFamily="monospace"
@@ -77,29 +91,18 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="83dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="91dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/music" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="85dp"
-        android:layout_height="101dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:srcCompat="@drawable/cultura" />
-
-    <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="81dp"
-        android:layout_height="98dp"
+        android:layout_width="95dp"
+        android:layout_height="115dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,11 +111,11 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="89dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/btn_Cultura"
         app:srcCompat="@drawable/deportes" />
@@ -121,24 +124,33 @@
         android:id="@+id/img_Exit"
         android:layout_width="46dp"
         android:layout_height="40dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Deportes"
         app:srcCompat="@drawable/logout" />
 
-    <Button
-        android:id="@+id/btn_Perfil"
+    <ImageView
+        android:id="@+id/img_Log"
+        android:layout_width="98dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosinnombre" />
+
+    <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="monospace"
-        android:text="Perfil"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/bandera" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,12 +19,28 @@ class MainRegistro : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Atras = findViewById<ImageView>(R.id.img_Atras)
+        var img_Atras = findViewById<ImageView>(R.id.img_Anterior)
         img_Atras.setOnClickListener {
             goAtras()
         }
+        var btn_Registro = findViewById<Button>(R.id.btn_Registro)
+        btn_Registro.setOnClickListener {
+            goRegistro()
+        }
+        var img_Logoregistro = findViewById<ImageView>(R.id.img_Logoregistro)
+        img_Logoregistro.setOnClickListener {
+            goRegis()
+        }
     }
     private fun goAtras(){
+        val i = Intent(this, MainActivity::class.java)
+        startActivity(i)
+    }
+    private fun goRegistro(){
+        val i = Intent(this, MainPerfil::class.java)
+        startActivity(i)
+    }
+    private fun goRegis(){
         val i = Intent(this, MainActivity::class.java)
         startActivity(i)
     }

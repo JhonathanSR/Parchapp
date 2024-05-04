@@ -20,8 +20,8 @@ class MainMenu : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var btn_Perfil = findViewById<Button>(R.id.btn_Perfil)
-        btn_Perfil.setOnClickListener {
+        var img_Log = findViewById<ImageView>(R.id.img_Log)
+        img_Log.setOnClickListener {
             goPerfil()
         }
         var img_Exit = findViewById<ImageView>(R.id.img_Exit)
