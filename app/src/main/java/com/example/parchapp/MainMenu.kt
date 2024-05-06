@@ -28,6 +28,10 @@ class MainMenu : AppCompatActivity() {
         img_Exit.setOnClickListener {
             goExit()
         }
+        var btn_Musica = findViewById<Button>(R.id.btn_Musica)
+        btn_Musica.setOnClickListener {
+            goMusic()
+        }
     }
     private fun goPerfil(){
         val i = Intent(this, MainPerfil::class.java)
@@ -35,6 +39,10 @@ class MainMenu : AppCompatActivity() {
     }
     private fun goExit(){
         val i = Intent(this, MainActivity::class.java)
+        startActivity(i)
+    }
+    private fun goMusic(){
+        val i = Intent(this, MainMusica::class.java)
         startActivity(i)
     }
 }

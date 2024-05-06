@@ -1,6 +1,8 @@
 package com.example.parchapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,21 @@ class MainHistorial : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        var img_Ant8 = findViewById<ImageView>(R.id.img_Ant8)
+        img_Ant8.setOnClickListener {
+            goPerfil2()
+        }
+        var img_Log8 = findViewById<ImageView>(R.id.img_Log8)
+        img_Log8.setOnClickListener {
+            goMenu2()
+        }
+    }
+    private fun goPerfil2(){
+        val i = Intent(this, MainPerfil::class.java)
+        startActivity(i)
+    }
+    private fun goMenu2(){
+        val i = Intent(this, MainMenu::class.java)
+        startActivity(i)
     }
 }

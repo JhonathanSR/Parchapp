@@ -19,7 +19,7 @@ class MainRegistro : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Atras = findViewById<ImageView>(R.id.img_Anterior)
+        var img_Atras = findViewById<ImageView>(R.id.img_Ant8)
         img_Atras.setOnClickListener {
             goAtras()
         }

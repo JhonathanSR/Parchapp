@@ -19,7 +19,7 @@ class MainPerfil : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Anterior = findViewById<ImageView>(R.id.img_Anterior)
+        var img_Anterior = findViewById<ImageView>(R.id.img_Ant8)
         img_Anterior.setOnClickListener {
             goAnterior()
         }
@@ -30,6 +30,10 @@ class MainPerfil : AppCompatActivity() {
         var img_Salir = findViewById<ImageView>(R.id.img_Salir)
         img_Salir.setOnClickListener {
             goSalir()
+        }
+        var btn_Hist = findViewById<Button>(R.id.btn_Hist)
+        btn_Hist.setOnClickListener {
+            goHistorial()
         }
     }
     private fun goAnterior(){
@@ -43,6 +47,10 @@ class MainPerfil : AppCompatActivity() {
     }
     private fun goSalir(){
         val i = Intent(this, MainActivity::class.java)
+        startActivity(i)
+    }
+    private fun goHistorial(){
+        val i = Intent(this, MainHistorial::class.java)
         startActivity(i)
     }
 }
