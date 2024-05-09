@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ParchApp"
         tools:targetApi="31">
         <activity
+            android:name=".MainDeportes"
+            android:exported="false" />
+        <activity
+            android:name=".MainRestaurantes"
+            android:exported="false" />
+        <activity
             android:name=".MainCultura"
             android:exported="false" />
         <activity
