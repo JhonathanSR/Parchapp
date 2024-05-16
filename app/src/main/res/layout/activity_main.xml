@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/logoNombre" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_Registrate" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logoNombre"
         android:layout_width="354sp"
         android:layout_height="278sp"
         android:layout_marginTop="40sp"
