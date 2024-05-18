@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_Cultura"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMusica" />
 
     <Button
         android:id="@+id/btn_Cultura"
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_Deportes"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imgRestaurantes" />
 
     <Button
         android:id="@+id/btn_Deportes"
@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgMusica"
         android:layout_width="91dp"
         android:layout_height="97dp"
         android:layout_marginStart="72dp"
@@ -100,7 +100,7 @@
         app:srcCompat="@drawable/music" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imgRestaurantes"
         android:layout_width="95dp"
         android:layout_height="115dp"
         android:layout_marginStart="72dp"
@@ -116,7 +116,7 @@
         android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.544"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/imgRestaurantes"
         app:layout_constraintTop_toBottomOf="@+id/btn_Cultura"
         app:srcCompat="@drawable/deportes" />
 
@@ -132,7 +132,7 @@
         app:srcCompat="@drawable/logout" />
 
     <ImageView
-        android:id="@+id/img_Log"
+        android:id="@+id/logo"
         android:layout_width="98dp"
         android:layout_height="81dp"
         android:layout_marginTop="24dp"
@@ -149,7 +149,7 @@
         android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imgMusica"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/bandera" />
 

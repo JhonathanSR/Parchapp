@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.parchapp.databinding.ActivityMainRegistroBinding
 
 class MainRegistro : AppCompatActivity() {
-    lateinit var binding: ActivityM
+    lateinit var binding: ActivityMainRegistroBinding
     lateinit var usuariosDBHelper: mySQLiteHelper
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +27,7 @@ class MainRegistro : AppCompatActivity() {
             insets
         }
         binding = ActivityMainRegistroBinding.inflate(layoutInflater)
-        //setContentView()
+        setContentView(binding.root)
 
         usuariosDBHelper = mySQLiteHelper(this)
         binding.btnRegistro.setOnClickListener {
@@ -78,4 +78,8 @@ class MainRegistro : AppCompatActivity() {
         val i = Intent(this, MainActivity::class.java)
         startActivity(i)
     }
+}
+
+class ActivityMainRegistroBinding {
+
 }
