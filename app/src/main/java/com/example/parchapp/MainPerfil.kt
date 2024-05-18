@@ -19,7 +19,7 @@ class MainPerfil : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Anterior = findViewById<ImageView>(R.id.img_Ant8)
+        var img_Anterior = findViewById<ImageView>(R.id.img_Ant10)
         img_Anterior.setOnClickListener {
             goAnterior()
         }

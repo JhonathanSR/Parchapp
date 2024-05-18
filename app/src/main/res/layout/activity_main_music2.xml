@@ -15,12 +15,12 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toEndOf="@+id/img_Ant8"
+        app:layout_constraintStart_toEndOf="@+id/img_An3"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
     <ImageView
-        android:id="@+id/img_Ant8"
+        android:id="@+id/img_An3"
         android:layout_width="63dp"
         android:layout_height="33dp"
         app:layout_constraintEnd_toEndOf="@+id/button"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/img_Ant8"
+        android:id="@+id/img_An3"
         android:layout_width="63dp"
         android:layout_height="33dp"
         app:layout_constraintEnd_toEndOf="@+id/button"

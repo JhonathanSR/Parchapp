@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/img_Ant8"
+        android:id="@+id/img_An2"
         android:layout_width="63dp"
         android:layout_height="33dp"
         app:layout_constraintEnd_toEndOf="@+id/button"
@@ -68,12 +68,14 @@
         android:id="@+id/btn_Modificar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="28dp"
         android:backgroundTint="#0BC23F"
         android:text="Modificar"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/btn_Eliminar"
+        app:layout_constraintStart_toEndOf="@+id/btn_Consultar"
         app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
     <Button

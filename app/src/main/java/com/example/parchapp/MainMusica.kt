@@ -22,7 +22,7 @@ class MainMusica : AppCompatActivity() {
         img_Log2.setOnClickListener {
             goPerfil()
         }
-        var img_Ant2 = findViewById<ImageView>(R.id.img_Ant8)
+        var img_Ant2 = findViewById<ImageView>(R.id.img_Ant10)
         img_Ant2.setOnClickListener {
             goMenu()
         }

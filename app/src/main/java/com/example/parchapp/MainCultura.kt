@@ -8,31 +8,23 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainMusic2 : AppCompatActivity() {
+class MainCultura : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main_music2)
+        setContentView(R.layout.activity_main_cultura)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Ant3 = findViewById<ImageView>(R.id.img_Ant10)
-        img_Ant3.setOnClickListener {
-            goMusica()
-        }
-        var img_Log4 = findViewById<ImageView>(R.id.img_Log4)
-        img_Log4.setOnClickListener {
-            goPerf()
+        var img_An4 = findViewById<ImageView>(R.id.img_An4)
+        img_An4.setOnClickListener {
+            goMen()
         }
     }
-    private fun goMusica(){
-        val i = Intent(this, MainMusica::class.java)
-        startActivity(i)
-    }
-    private fun goPerf(){
-        val i = Intent(this, MainPerfil::class.java)
+    private fun goMen(){
+        val i = Intent (this, MainMenu::class.java )
         startActivity(i)
     }
 }
