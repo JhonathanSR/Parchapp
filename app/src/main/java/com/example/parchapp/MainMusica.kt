@@ -18,7 +18,7 @@ class MainMusica : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Log2 = findViewById<ImageView>(R.id.img_Log4)
+        /*var img_Log2 = findViewById<ImageView>(R.id.img_Log4)
         img_Log2.setOnClickListener {
             goPerfil()
         }
@@ -29,7 +29,7 @@ class MainMusica : AppCompatActivity() {
         var img_Evento = findViewById<ImageView>(R.id.img_Evento)
         img_Evento.setOnClickListener {
             goMusic2()
-        }
+        }*/
     }
     private  fun goPerfil(){
         val i = Intent(this, MainPerfil::class.java)
@@ -39,9 +39,9 @@ class MainMusica : AppCompatActivity() {
         val i = Intent(this, MainMenu::class.java)
         startActivity(i)
     }
-    private fun goMusic2(){
+    /*private fun goMusic2(){
         val i = Intent(this, MainMusic2::class.java)
         startActivity(i)
-    }
+    }*/
 
 }

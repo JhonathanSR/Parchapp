@@ -13,35 +13,32 @@
         android:theme="@style/Theme.ParchApp"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
-=======
+
             android:name=".MainDeportes"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainRestaurantes"
-            android:exported="false" />
-        <activity
->>>>>>> ed70edaca10c3bd7e01e7c7f3bbce400e2ab3f52
-            android:name=".MainCultura"
-            android:exported="false" />
+            android:exported="true" />
+
+
         <activity
             android:name=".MainHistorial"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainMusic2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainMusica"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainMenu"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainPerfil"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainRegistro"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

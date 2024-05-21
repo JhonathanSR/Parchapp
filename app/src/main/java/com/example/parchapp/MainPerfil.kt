@@ -19,10 +19,10 @@ class MainPerfil : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Anterior = findViewById<ImageView>(R.id.img_Ant10)
+        /*var img_Anterior = findViewById<ImageView>(R.id.img_Ant10)
         img_Anterior.setOnClickListener {
             goAnterior()
-        }
+        }*/
         var btn_Inicio = findViewById<Button>(R.id.btn_Inicio)
         btn_Inicio.setOnClickListener {
             goInicio()
