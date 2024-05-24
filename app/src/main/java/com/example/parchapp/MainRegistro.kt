@@ -54,10 +54,10 @@ class MainRegistro : AppCompatActivity() {
             }
         }
 
-        var img_AnT = findViewById<ImageView>(R.id.img_An4)
+        /*var img_AnT = findViewById<ImageView>(R.id.img_An4)
         img_AnT.setOnClickListener {
             goAtras()
-        }
+        }*/
         /*var btn_Registro = findViewById<Button>(R.id.btn_Registro)
         btn_Registro.setOnClickListener {
             goRegistro()

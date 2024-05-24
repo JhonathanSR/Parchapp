@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".MainHistorial">
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/btnH1"
         android:layout_width="74dp"
@@ -29,6 +30,8 @@
         app:layout_constraintTop_toTopOf="@+id/btnH1"
         app:srcCompat="@drawable/flecha" />
 
+=======
+>>>>>>> 65254eea984677fabf3342548522acfd38862ff7
     <ImageView
         android:id="@+id/img_Log8"
         android:layout_width="88dp"
