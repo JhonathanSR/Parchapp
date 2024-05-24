@@ -49,7 +49,8 @@ class MainRegistro : AppCompatActivity() {
                     this, "No se ha podido Registrar",
                     Toast.LENGTH_LONG
                 ).show()
-
+            val  i = Intent(this, MainActivity::class.java)
+                startActivity(i)
             }
         }
 

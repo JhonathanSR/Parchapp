@@ -9,27 +9,16 @@
     tools:context=".MainMusic2">
 
     <ImageView
-        android:id="@+id/img_Log4"
+        android:id="@+id/imgLogM"
         android:layout_width="92dp"
         android:layout_height="92dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toEndOf="@+id/img_An3"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
-    <ImageView
-        android:id="@+id/img_An3"
-        android:layout_width="63dp"
-        android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        app:srcCompat="@drawable/flecha" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnM1"
         android:layout_width="74dp"
         android:layout_height="33dp"
         android:layout_marginTop="28dp"
@@ -40,24 +29,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/img_An3"
+        android:id="@+id/imgA4"
         android:layout_width="63dp"
         android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/btnM1"
+        app:layout_constraintStart_toStartOf="@+id/btnM1"
+        app:layout_constraintTop_toTopOf="@+id/btnM1"
         app:srcCompat="@drawable/flecha" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="297dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="180dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView11"
@@ -66,16 +44,15 @@
         android:text="Imagen de Evento"
         android:textAlignment="center"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_Log4" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLogM" />
 
     <EditText
         android:id="@+id/editTextText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Nombre de Evento"
         android:inputType="text"
@@ -83,8 +60,9 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
     <EditText
         android:id="@+id/editTextText6"
@@ -129,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnParc"
         android:layout_width="247dp"
         android:layout_height="42dp"
         android:layout_marginTop="20dp"
@@ -162,5 +140,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12"
         app:srcCompat="@drawable/clock" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

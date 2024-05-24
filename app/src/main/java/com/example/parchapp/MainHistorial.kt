@@ -18,8 +18,8 @@ class MainHistorial : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Ant8 = findViewById<ImageView>(R.id.img_Ant10)
-        img_Ant8.setOnClickListener {
+        var imgA3 = findViewById<ImageView>(R.id.imgA3)
+        imgA3.setOnClickListener {
             goPerfil2()
         }
         var img_Log8 = findViewById<ImageView>(R.id.img_Log8)

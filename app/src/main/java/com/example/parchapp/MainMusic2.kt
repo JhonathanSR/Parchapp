@@ -18,12 +18,12 @@ class MainMusic2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Ant3 = findViewById<ImageView>(R.id.img_Ant10)
-        img_Ant3.setOnClickListener {
+        var imgA4 = findViewById<ImageView>(R.id.imgA4)
+        imgA4.setOnClickListener {
             goMusica()
         }
-        var img_Log4 = findViewById<ImageView>(R.id.img_Log4)
-        img_Log4.setOnClickListener {
+        var imgLogM = findViewById<ImageView>(R.id.imgLogM)
+        imgLogM.setOnClickListener {
             goPerf()
         }
     }

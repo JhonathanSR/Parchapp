@@ -9,7 +9,7 @@
     tools:context=".MainHistorial">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnH1"
         android:layout_width="74dp"
         android:layout_height="33dp"
         android:layout_marginTop="60dp"
@@ -20,13 +20,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/img_An2"
+        android:id="@+id/imgA3"
         android:layout_width="63dp"
         android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/btnH1"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/btnH1"
+        app:layout_constraintTop_toTopOf="@+id/btnH1"
         app:srcCompat="@drawable/flecha" />
 
     <ImageView

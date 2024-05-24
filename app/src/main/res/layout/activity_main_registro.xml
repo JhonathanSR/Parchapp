@@ -84,7 +84,7 @@
         app:srcCompat="@drawable/logosinnombre" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnR1"
         android:layout_width="74dp"
         android:layout_height="33dp"
         android:layout_marginTop="28dp"
@@ -98,9 +98,9 @@
         android:id="@+id/img_An4"
         android:layout_width="63dp"
         android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/btnR1"
+        app:layout_constraintStart_toStartOf="@+id/btnR1"
+        app:layout_constraintTop_toTopOf="@+id/btnR1"
         app:srcCompat="@drawable/flecha" />
 
     <ImageView

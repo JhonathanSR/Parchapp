@@ -10,8 +10,9 @@ class mySQLiteHelper (context: Context): SQLiteOpenHelper(
     override fun onCreate(db: SQLiteDatabase?) {
         val ordenCreacion = "CREATE TABLE usuarios" +
                 ("id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                        "nombre TEXT, contraseña TEXT, email TEXT, ")
+                        "nombre TEXT, contraseña TEXT ")
         db!!.execSQL(ordenCreacion)
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?,
@@ -20,21 +21,31 @@ class mySQLiteHelper (context: Context): SQLiteOpenHelper(
         db!!.execSQL(ordenBorrado)
         onCreate(db)
     }
-    fun anadirdato(nombre: String, contraseña: String, email: String){
-        val datos = ContentValues()
-        datos.put("nombre", nombre)
-        datos.put("contraseña",contraseña)
-        datos.put("email", email)
-
+    fun anadirdato(nombre: String, contraseña: String): Long{
         val db = this.writableDatabase
-        db.insert("usuarios", null, datos)
+        val contentValues = ContentValues()
+        contentValues.put("nombre", nombre)
+        contentValues.put("contraseña",contraseña)
+        //datos.put("email", email)
+
+        return db.insert("usuarios", null, contentValues)
         db.close()
 
     }
 
-    fun anadirdato(nombre: String, contraseña: String) {
+    fun obtenerDatos(nombre: String, contraseña: String): Boolean{
+        val db = this.readableDatabase
+        val query = "SELECT * FROM  TABLE usuarios where nombre = ? &&  contraseña = ?"
+        val cursor =db.rawQuery(query, arrayOf(nombre, contraseña))
+        val count = cursor.count
+        cursor.close()
+        return count > 0
 
     }
+   /* fun iniciarDatabase(){
+        val db = this.writableDatabase
+        db.execSQL("INSERT INTO TABLE usuarios(nombre, contraseña)VALUES ('testuser', 'testpass')")
+    }*/
 
 
 }

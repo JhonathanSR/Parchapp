@@ -1,12 +1,12 @@
 package com.example.parchapp
 
-<<<<<<< HEAD
+
 import android.content.Intent
-import android.os.Bundle
+
 import android.widget.ImageView
-=======
+
 import android.os.Bundle
->>>>>>> ed70edaca10c3bd7e01e7c7f3bbce400e2ab3f52
+
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,16 +22,13 @@ class MainCultura : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-<<<<<<< HEAD
-        var img_An4 = findViewById<ImageView>(R.id.img_An4)
-        img_An4.setOnClickListener {
-            goMen()
+
+        /*var imgA1 = findViewById<ImageView>(R.id.imgA1)
+        imgA1.setOnClickListener {
+            goMen()*/
         }
     }
-    private fun goMen(){
+    /*private fun goMen(){
         val i = Intent (this, MainMenu::class.java )
-        startActivity(i)
-=======
->>>>>>> ed70edaca10c3bd7e01e7c7f3bbce400e2ab3f52
-    }
-}
+        startActivity(i)*/
+

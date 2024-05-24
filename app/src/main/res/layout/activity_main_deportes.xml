@@ -9,7 +9,7 @@
     tools:context=".MainDeportes">
 
     <ImageButton
-        android:id="@+id/button"
+        android:id="@+id/btnD1"
         android:layout_width="74dp"
         android:layout_height="33dp"
         android:layout_marginTop="28dp"
@@ -21,12 +21,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/img_Ant8"
+        android:id="@+id/imgA2"
         android:layout_width="63dp"
         android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/btnD1"
+        app:layout_constraintStart_toStartOf="@+id/btnD1"
+        app:layout_constraintTop_toTopOf="@+id/btnD1"
         app:srcCompat="@drawable/flecha" />
 
     <ImageView
@@ -37,7 +37,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.943"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/btnD1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
@@ -67,58 +67,38 @@
         app:layout_constraintTop_toBottomOf="@+id/imgDeportes" />
 
     <ImageButton
-        android:id="@+id/left"
+        android:id="@+id/left1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
-        android:background="00FF00"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        android:background="#FF00FF00"
         app:layout_constraintEnd_toStartOf="@+id/textDeportes"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:srcCompat="@drawable/polygon2" />
 
     <ImageButton
-        android:id="@+id/eventoD1"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintEnd_toEndOf="logo"
-        app:layout_constraintStart_toStartOf="@id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textDeportes" />
+        android:id="@+id/imageButton2"
+        android:layout_width="306dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDeportes"
+        app:srcCompat="@drawable/deportes" />
 
-    <ImageButton
-        android:id="@+id/eventoD2"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintEnd_toEndOf="logo"
-        app:layout_constraintTop_toBottomOf="@+id/eventoD1"
-        app:layout_constraintStart_toStartOf="@id/eventoD1"
-        android:layout_marginTop="25dp"/>
-
-    <ImageButton
-        android:id="@+id/eventoD3"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintStart_toStartOf="@id/eventoD1"
-        app:layout_constraintTop_toBottomOf="@+id/eventoD2"
-        android:layout_marginTop="25dp"/>
-
-    <ImageButton
-        android:id="@+id/eventoD4"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintStart_toStartOf="@id/eventoD1"
-        app:layout_constraintTop_toBottomOf="@+id/eventoD3"
-        android:layout_marginTop="25dp"/>
-
-    <ImageButton
-        android:id="@+id/eventoD5"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintStart_toStartOf="@id/eventoD1"
-        app:layout_constraintTop_toBottomOf="@+id/eventoD4"
-        android:layout_marginTop="25dp"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#28D82F"
+        android:text="parchemos"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

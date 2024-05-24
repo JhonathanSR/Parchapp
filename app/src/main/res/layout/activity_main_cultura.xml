@@ -10,36 +10,6 @@
     tools:context=".MainCultura">
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="126dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="24dp"
-        android:background="#011127"
-        android:layout_height="match_parent"
-        tools:context=".MainCultura" />
-
-    <ImageButton
-        android:id="@+id/button"
-        android:layout_width="74dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="#D9D9D9"
-        android:background="@drawable/curve_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_Ant8"
-        android:layout_width="63dp"
-        android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        app:srcCompat="@drawable/flecha" />
-
-    <TextView
         android:id="@+id/textCultura"
         android:layout_width="115dp"
         android:layout_height="45dp"
@@ -72,83 +42,29 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.943"
-        app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
-
-    <ImageView
-        android:id="@+id/img_An1"
-        android:layout_width="63dp"
-        android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        app:srcCompat="@drawable/flecha" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="74dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="#D9D9D9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/btn_Parchar"
         android:layout_width="163dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#28D82F"
         android:text="!Parchemos!"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
-
-    <ImageView
-        android:id="@+id/imgAtras"
-        android:layout_width="47dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/img_An1"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="@+id/img_An1"
-        app:layout_constraintTop_toTopOf="@+id/img_An1"
-        app:srcCompat="@drawable/flecha" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <ImageButton
         android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
-        android:background="00FF00"
+        android:background="#FF00FF00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textCultura"
         app:layout_constraintTop_toBottomOf="@+id/logo"
@@ -159,56 +75,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
-        android:background="00FF00"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="#00FF00"
         app:layout_constraintEnd_toStartOf="@+id/textCultura"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:srcCompat="@drawable/polygon2" />
 
-
-
     <ImageButton
-        android:id="@+id/eventoC1"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintEnd_toEndOf="logo"
-        app:layout_constraintStart_toStartOf="@id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textCultura" />
-
-    <ImageButton
-        android:id="@+id/eventoC2"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintEnd_toEndOf="logo"
-        app:layout_constraintTop_toBottomOf="@+id/eventoC1"
-        app:layout_constraintStart_toStartOf="@id/eventoC1"
-        android:layout_marginTop="25dp"/>
-
-    <ImageButton
-        android:id="@+id/eventoC3"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintStart_toStartOf="@id/eventoC1"
-        app:layout_constraintTop_toBottomOf="@+id/eventoC2"
-        android:layout_marginTop="25dp"/>
-
-    <ImageButton
-        android:id="@+id/eventoC4"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintStart_toStartOf="@id/eventoC1"
-        app:layout_constraintTop_toBottomOf="@+id/eventoC3"
-        android:layout_marginTop="25dp"/>
-
-    <ImageButton
-        android:id="@+id/eventoC5"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintStart_toStartOf="@id/eventoC1"
-        app:layout_constraintTop_toBottomOf="@+id/eventoC4"
-        android:layout_marginTop="25dp"/>
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCultura"
+        app:srcCompat="@drawable/cultura" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.example.parchapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,16 +19,16 @@ class MainMusica : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var img_Log2 = findViewById<ImageView>(R.id.img_Log4)
-        img_Log2.setOnClickListener {
+        var imgLog4 = findViewById<ImageView>(R.id.imgLog4)
+        imgLog4.setOnClickListener {
             goPerfil()
         }
-        var img_Ant2 = findViewById<ImageView>(R.id.img_Ant10)
-        img_Ant2.setOnClickListener {
+        var imgA5 = findViewById<ImageView>(R.id.imgA5)
+        imgA5.setOnClickListener {
             goMenu()
         }
-        var img_Evento = findViewById<ImageView>(R.id.img_Evento)
-        img_Evento.setOnClickListener {
+        var imgBut4 = findViewById<ImageButton>(R.id.imgBut4)
+        imgBut4.setOnClickListener {
             goMusic2()
         }
     }
