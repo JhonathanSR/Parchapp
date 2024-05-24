@@ -8,7 +8,6 @@
     android:background="#011127"
     tools:context=".MainPerfil">
 
-<<<<<<< HEAD
     <Button
         android:id="@+id/btnP1"
         android:layout_width="74dp"
@@ -137,21 +136,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_Salir" />
+        app:layout_constraintTop_toBottomOf="@+id/img_Salir" /><![CDATA[
 
-    <ImageView
-        android:id="@+id/imgLog"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintHorizontal_bias="0.912"
-        app:layout_constraintStart_toEndOf="@+id/btnP1"
-=======
+    =======
 >>>>>>> 65254eea984677fabf3342548522acfd38862ff7
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
+
+
+
+    ]]>
 
     <Button
         android:id="@+id/btn_Hist"
@@ -176,5 +170,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/registro" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toEndOf="@+id/btnP1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosinnombre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

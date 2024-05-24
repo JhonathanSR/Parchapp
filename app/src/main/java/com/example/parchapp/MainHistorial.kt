@@ -18,16 +18,16 @@ class MainHistorial : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-<<<<<<< HEAD
+
         var imgA3 = findViewById<ImageView>(R.id.imgA3)
         imgA3.setOnClickListener {
-=======
-        /*var img_Ant8 = findViewById<ImageView>(R.id.img_Ant10)
+
+            /*var img_Ant8 = findViewById<ImageView>(R.id.img_Ant10)
         img_Ant8.setOnClickListener {
 >>>>>>> 65254eea984677fabf3342548522acfd38862ff7
             goPerfil2()
         }*/
-        var img_Log8 = findViewById<ImageView>(R.id.img_Log8)
+            /*var img_Log8 = findViewById<ImageView>(R.id.img_Log8)
         img_Log8.setOnClickListener {
             goMenu2()
         }
@@ -38,6 +38,7 @@ class MainHistorial : AppCompatActivity() {
     }
     private fun goMenu2(){
         val i = Intent(this, MainMenu::class.java)
-        startActivity(i)
+        startActivity(i)*/
+        }
     }
 }

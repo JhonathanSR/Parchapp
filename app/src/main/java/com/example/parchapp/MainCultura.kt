@@ -2,11 +2,9 @@ package com.example.parchapp
 
 
 import android.content.Intent
-<<<<<<< HEAD
 
-=======
 //import android.os.Bundle
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
+
 import android.widget.ImageView
 
 import android.os.Bundle
@@ -27,27 +25,27 @@ class MainCultura : AppCompatActivity() {
             insets
         }
 
-<<<<<<< HEAD
+
         /*var imgA1 = findViewById<ImageView>(R.id.imgA1)
         imgA1.setOnClickListener {
             goMen()*/
         }
-=======
+
         /*var img_An4 = findViewById<ImageView>(R.id.img_An4)
         img_An4.setOnClickListener {
             goMen()
         }*/
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
+
     }
     /*private fun goMen(){
         val i = Intent (this, MainMenu::class.java )
 <<<<<<< HEAD
         startActivity(i)*/
 
-=======
-        startActivity(i)
 
 
-    }
-}
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
+
+
+
+
+

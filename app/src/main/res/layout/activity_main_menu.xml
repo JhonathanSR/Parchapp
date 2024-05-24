@@ -131,10 +131,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_Deportes"
         app:srcCompat="@drawable/logout" />
 
-    <ImageView
-<<<<<<< HEAD
-        android:id="@+id/imgLogo"
-=======
+    =======
         android:id="@+id/img_Log"
 >>>>>>> 65254eea984677fabf3342548522acfd38862ff7
         android:layout_width="98dp"
@@ -156,5 +153,16 @@
         app:layout_constraintStart_toEndOf="@+id/imgMusica"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/bandera" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="96dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosinnombre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -83,7 +83,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
-<<<<<<< HEAD
     <Button
         android:id="@+id/btnR1"
         android:layout_width="74dp"

@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".MainHistorial">
 
-<<<<<<< HEAD
     <Button
         android:id="@+id/btnH1"
         android:layout_width="74dp"
