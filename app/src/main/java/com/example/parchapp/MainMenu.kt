@@ -20,7 +20,7 @@ class MainMenu : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var imgLogo = findViewById<ImageView>(R.id.imgLogo)
+        var imgLogo = findViewById<ImageView>(R.id.img_Log)
         imgLogo.setOnClickListener {
             goPerfil()
         }

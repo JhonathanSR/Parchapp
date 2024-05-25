@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#011127"
-    tools:context=".MainRegistro">
+    tools:context=".MainRegistro" >
 
     <TextView
         android:id="@+id/textView"
@@ -83,7 +83,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
-<<<<<<< HEAD
     <Button
         android:id="@+id/btnR1"
         android:layout_width="74dp"
@@ -104,8 +103,6 @@
         app:layout_constraintTop_toTopOf="@+id/btnR1"
         app:srcCompat="@drawable/flecha" />
 
-=======
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
     <ImageView
         android:id="@+id/img_Logoregistro"
         android:layout_width="35dp"

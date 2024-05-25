@@ -132,11 +132,7 @@
         app:srcCompat="@drawable/logout" />
 
     <ImageView
-<<<<<<< HEAD
-        android:id="@+id/imgLogo"
-=======
         android:id="@+id/img_Log"
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
         android:layout_width="98dp"
         android:layout_height="81dp"
         android:layout_marginTop="24dp"

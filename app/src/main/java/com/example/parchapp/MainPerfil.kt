@@ -19,47 +19,5 @@ class MainPerfil : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-<<<<<<< HEAD
-        var imgA6 = findViewById<ImageView>(R.id.imgA6)
-        imgA6.setOnClickListener {
-            goAnterior()
-        }
-        var btnInicio = findViewById<Button>(R.id.btnInicio)
-        btnInicio.setOnClickListener {
-=======
-        /*var img_Anterior = findViewById<ImageView>(R.id.img_Ant10)
-        img_Anterior.setOnClickListener {
-            goAnterior()
-        }*/
-        var btn_Inicio = findViewById<Button>(R.id.btn_Inicio)
-        btn_Inicio.setOnClickListener {
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
-            goInicio()
-        }
-        var img_Salir = findViewById<ImageView>(R.id.img_Salir)
-        img_Salir.setOnClickListener {
-            goSalir()
-        }
-        var btn_Hist = findViewById<Button>(R.id.btn_Hist)
-        btn_Hist.setOnClickListener {
-            goHistorial()
-        }
-    }
-    private fun goAnterior(){
-        val i = Intent(this, MainMenu::class.java)
-        startActivity(i)
-    }
-    private fun goInicio(){
-        val i = Intent(this, MainMenu::class.java)
-        startActivity(i)
-
-    }
-    private fun goSalir(){
-        val i = Intent(this, MainActivity::class.java)
-        startActivity(i)
-    }
-    private fun goHistorial(){
-        val i = Intent(this, MainHistorial::class.java)
-        startActivity(i)
     }
 }

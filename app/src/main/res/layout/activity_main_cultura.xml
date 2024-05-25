@@ -9,22 +9,31 @@
     android:background="#011127"
     tools:context=".MainCultura">
 
-<<<<<<< HEAD
-=======
+    <ImageButton
+        android:id="@+id/btnD1"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#D9D9D9"
+        android:background="@drawable/curve_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/img_Ant8"
+        android:id="@+id/imgA2"
         android:layout_width="63dp"
         android:layout_height="33dp"
-        app:srcCompat="@drawable/flecha"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="464dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnD1"
+        app:layout_constraintStart_toStartOf="@+id/btnD1"
+        app:layout_constraintTop_toTopOf="@+id/btnD1"
+        app:srcCompat="@drawable/flecha" />
 
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
     <TextView
         android:id="@+id/textCultura"
         android:layout_width="115dp"
         android:layout_height="45dp"
-
         android:layout_marginTop="40dp"
         android:fontFamily="monospace"
         android:text="Cultura"
@@ -57,85 +66,53 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
-
-<<<<<<< HEAD
     <Button
         android:id="@+id/btn_Parchar"
-        android:layout_width="163dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
         android:backgroundTint="#28D82F"
         android:text="!Parchemos!"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        tools:layout_editor_absoluteY="639dp" />
 
     <ImageButton
         android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:background="#FF00FF00"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="156dp"
+        android:background="#000000"
         app:layout_constraintStart_toEndOf="@+id/textCultura"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/img_Log"
         app:srcCompat="@drawable/polygon1" />
 
     <ImageButton
         android:id="@+id/left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:background="#00FF00"
+        android:layout_marginTop="40dp"
+        android:background="#000000
+"
         app:layout_constraintEnd_toStartOf="@+id/textCultura"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/imgCultura"
         app:srcCompat="@drawable/polygon2" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textCultura"
         app:srcCompat="@drawable/cultura" />
-=======
-    <ImageButton
-        android:id="@+id/eventoC4"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="825dp" />
 
-    <ImageButton
-        android:id="@+id/eventoC5"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="25dp"
-        app:layout_constraintTop_toBottomOf="@+id/eventoC4"
-        tools:layout_editor_absoluteX="28dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="323dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="464dp"
-        tools:srcCompat="@tools:sample/avatars" />
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

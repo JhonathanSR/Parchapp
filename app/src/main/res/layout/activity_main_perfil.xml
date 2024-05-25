@@ -8,7 +8,6 @@
     android:background="#011127"
     tools:context=".MainPerfil">
 
-<<<<<<< HEAD
     <Button
         android:id="@+id/btnP1"
         android:layout_width="74dp"
@@ -145,11 +144,8 @@
         android:layout_height="62dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.912"
         app:layout_constraintStart_toEndOf="@+id/btnP1"
-=======
->>>>>>> 65254eea984677fabf3342548522acfd38862ff7
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 

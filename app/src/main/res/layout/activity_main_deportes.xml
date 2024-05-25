@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
-        android:background="#FF00FF00"
+        android:background="#000000"
         app:layout_constraintEnd_toStartOf="@+id/textDeportes"
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,8 +80,8 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="306dp"
-        android:layout_height="220dp"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -91,14 +91,14 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="163dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
         android:backgroundTint="#28D82F"
-        android:text="parchemos"
+        android:text="Parchemos"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+        tools:layout_editor_absoluteY="597dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
