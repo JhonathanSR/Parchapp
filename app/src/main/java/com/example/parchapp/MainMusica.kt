@@ -35,7 +35,7 @@ class MainMusica : AppCompatActivity() {
 
         var right2 = findViewById<ImageView>(R.id.right2)
         right2.setOnClickListener {
-            goMusic2()
+            goCultura()
         }
 
     }
@@ -55,8 +55,8 @@ class MainMusica : AppCompatActivity() {
     private fun goInscrito(){
 
     }
-    private fun goMusic2(){
-        val i = Intent(this, MainMusic2::class.java)
+    private fun goCultura(){
+        val i = Intent(this, MainCultura::class.java)
         startActivity(i)
     }
 }

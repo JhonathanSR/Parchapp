@@ -1,6 +1,9 @@
 package com.example.parchapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +19,25 @@ class MainCultura : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btn_left = findViewById<ImageButton>(R.id.left)
+        btn_left.setOnClickListener {
+            goMusica()
+        }
+
+        val btn_right = findViewById<ImageButton>(R.id.right)
+        btn_right.setOnClickListener {
+            goResta()
+        }
+    }
+    private fun goMusica(){
+        val i = Intent(this, MainMusica::class.java)
+        startActivity(i)
+    }
+
+    private fun goResta(){
+        val i = Intent(this, MainRestaurantes::class.java)
+        startActivity(i)
+
     }
 }
