@@ -41,19 +41,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
+
     <TextView
         android:id="@+id/textMusica"
         android:layout_width="108dp"
         android:layout_height="41dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="monospace"
         android:text="Música"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="26dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="253dp" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -70,16 +72,16 @@
         android:id="@+id/right2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="48dp"
         android:background="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toEndOf="@+id/textMusica"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
         app:srcCompat="@drawable/polygon1" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/imgBut1"
         android:layout_width="330dp"
         android:layout_height="130dp"
         android:layout_marginTop="68dp"
@@ -88,5 +90,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textMusica"
         app:srcCompat="@drawable/capitalfest" />
+
+    <Button
+        android:id="@+id/btnParch1"
+        android:layout_width="247dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#0BC23F"
+        android:textColor="@color/white"
+        android:text="¡Parchemos!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBut1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

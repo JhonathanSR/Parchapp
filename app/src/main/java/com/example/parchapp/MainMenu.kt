@@ -8,11 +8,16 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.lifecycle.findViewTreeViewModelStoreOwner
+import com.example.parchapp.databinding.ActivityMainMenuBinding
 
 class MainMenu : AppCompatActivity() {
+    lateinit var  binding: ActivityMainMenuBinding
+    lateinit var  usuariosDBHelper: mySQLiteHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding =
+            ActivityMainMenuBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_menu)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -20,29 +25,49 @@ class MainMenu : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var imgLogo = findViewById<ImageView>(R.id.img_Log)
-        imgLogo.setOnClickListener {
-            goPerfil()
+
+        var btnMusica = findViewById<Button>(R.id.btnMusica)
+        btnMusica.setOnClickListener {
+            goMusic2()
+        }
+        var btnCultura = findViewById<Button>(R.id.btnCultura)
+        btnCultura.setOnClickListener {
+            goCultura()
+        }
+        var btnRestau = findViewById<Button>(R.id.btnRestau)
+        btnRestau.setOnClickListener {
+            goResta()
+        }
+        var btnDeportes = findViewById<Button>(R.id.btnDeportes)
+        btnDeportes.setOnClickListener {
+            goDeport()
         }
         var img_Exit = findViewById<ImageView>(R.id.img_Exit)
         img_Exit.setOnClickListener {
-            goExit()
-        }
-        var btn_Musica = findViewById<Button>(R.id.btn_Musica)
-        btn_Musica.setOnClickListener {
-            goMusic()
+            goSalida()
         }
     }
-    private fun goPerfil(){
-        val i = Intent(this, MainPerfil::class.java)
+    private fun goMusic2(){
+        val i = Intent(this, MainMusic2::class.java)
         startActivity(i)
     }
-    private fun goExit(){
+    private fun goCultura(){
+        val i = Intent(this, MainCultura::class.java)
+        startActivity(i)
+    }
+    private fun goResta(){
+        val i = Intent(this, MainRestaurantes::class.java)
+        startActivity(i)
+    }
+    private fun goDeport(){
+        val i = Intent(this, MainDeportes::class.java)
+        startActivity(i)
+    }
+    private fun goSalida(){
         val i = Intent(this, MainActivity::class.java)
         startActivity(i)
     }
-    private fun goMusic(){
-        val i = Intent(this, MainMusica::class.java)
-        startActivity(i)
-    }
 }
+
+
+

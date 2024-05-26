@@ -2,6 +2,7 @@ package com.example.parchapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -15,13 +16,9 @@ import com.example.parchapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var usuariosDBHelper: mySQLiteHelper
-    lateinit var edtNombre: EditText
-    lateinit var edtPass: EditText
-    lateinit var btn_Sesion: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityMainBinding.inflate(layoutInflater)
-
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -29,47 +26,53 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        /*binding= ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)*/
-
         usuariosDBHelper = mySQLiteHelper(this)
-        edtNombre = findViewById(R.id.edtNombre)
-        edtPass = findViewById(R.id.edtPass)
-        btn_Sesion = findViewById(R.id.btn_Sesion)
+        //val contrasena = findViewById<EditText>(R.id.edtPass)
+        val txt_Registrate = findViewById<TextView>(R.id.txt_Registrate)
 
+        val btn_Sesion = findViewById<Button>(R.id.btn_Sesion)
         btn_Sesion.setOnClickListener {
-            val nombre = edtNombre.text.toString()
-            val contraseña = edtPass.text.toString()
-            if (usuariosDBHelper.obtenerDatos(nombre, contraseña)){
-                Toast.makeText(this, "Ingreso Exitoso", Toast.LENGTH_LONG).show()
+            loginUser()
+
+        }
+        txt_Registrate.setOnClickListener {
+            goRegis()
+        }
+    }
+    private  fun loginUser(){
+        val nombre = findViewById<EditText>(R.id.edtNombre).text.toString()
+        val contrasena = findViewById<EditText>(R.id.edtPass).text.toString()
+
+
+
+        Log.d("LoginUser", "Nombre: $nombre, Contraseña: $contrasena")
+
+        if (nombre.isNotEmpty() && contrasena.isNotEmpty()) {
+            val resultado = usuariosDBHelper.obtenerDatos(nombre, contrasena)
+
+            Log.d("LoginUser", "User login resultado: $resultado")
+
+            if (resultado) {
+                Toast.makeText(this, "Inicio de Sesión Exitoso",
+                    Toast.LENGTH_SHORT).show()
+                findViewById<EditText>(R.id.edtNombre).setText("")
+                findViewById<EditText>(R.id.edtPass).setText("")
+
                 val i = Intent(this, MainMenu::class.java)
                 startActivity(i)
-                finish()
-                //usuariosDBHelper.iniciarDatabase()
-            }else {
-                Toast.makeText(this, "Contrasena o usuario invalidos",
+            } else {
+                Toast.makeText(this, "Usuario o contraseña incorrectos",
                     Toast.LENGTH_SHORT).show()
             }
-        }
-
-
-
-        /*var btn_Sesion = findViewById<Button>(R.id.btn_Sesion)
-        btn_Sesion.setOnClickListener {
-            goIniciar()
-        }*/
-        var txt_Registrate = findViewById<TextView>(R.id.txt_Registrate)
-        txt_Registrate.setOnClickListener {
-            goRegistrar()
+        } else {
+            Toast.makeText(this, "Complete todos los campos",
+                Toast.LENGTH_SHORT).show()
         }
 
     }
-    /*private fun goIniciar(){
-        val i =Intent (this, MainMenu::class.java)
-        startActivity(i)
-    }*/
-    private fun goRegistrar(){
-    val i = Intent(this, MainRegistro::class.java )
+    private fun goRegis(){
+        val i = Intent(this, MainRegistro::class.java)
         startActivity(i)
     }
 }
+

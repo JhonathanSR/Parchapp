@@ -3,6 +3,9 @@ package com.example.parchapp
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -14,11 +17,12 @@ import com.example.parchapp.databinding.ActivityMainRegistroBinding
 class MainRegistro : AppCompatActivity() {
     lateinit var binding: ActivityMainRegistroBinding
     lateinit var usuariosDBHelper: mySQLiteHelper
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding =
             ActivityMainRegistroBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_registro)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -26,61 +30,56 @@ class MainRegistro : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding = ActivityMainRegistroBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
         usuariosDBHelper = mySQLiteHelper(this)
-        binding.btnRegistro.setOnClickListener {
-            if (binding.edTNombre.text.isNotBlank() &&
-                binding.edTPass2.text.isNotBlank()
-            ) {
-                usuariosDBHelper.anadirdato(
-                    binding.edTNombre.text.toString(),
-                    binding.edTPass2.text.toString()
-                )
-                binding.edTNombre.text.clear()
-                binding.edTPass2.text.clear()
+        var imgR1 = findViewById<ImageView>(R.id.imgR1)
+        imgR1.setOnClickListener {
+            goReverse()
+        }
+        val btnRegistro: Button = findViewById(R.id.btnRegistro)
+        btnRegistro.setOnClickListener {
+            registerUser()
+        }
+    }
+
+    private fun registerUser() {
+        val nombre = findViewById<EditText>(R.id.edTNombre).text.toString()
+        val contrasena = findViewById<EditText>(R.id.edTPass2).text.toString()
+
+        Log.d("RegisterUser", "Nombre: $nombre, Contrasena: $contrasena")
+
+        if (nombre.isNotEmpty() && contrasena.isNotEmpty()) {
+            val usuariosDBHelper = mySQLiteHelper(this)
+            val resultado = usuariosDBHelper.anadirdato(nombre, contrasena)
+
+            Log.d("RegisterUser", "User registration resultado: $resultado")
+
+            if (resultado) {
                 Toast.makeText(
-                    this, "Registro Completo",
+                    this, "Usuario Registrado",
                     Toast.LENGTH_SHORT
                 ).show()
+                findViewById<EditText>(R.id.edTNombre).setText("")
+                findViewById<EditText>(R.id.edTPass2).setText("")
             } else {
                 Toast.makeText(
-                    this, "No se ha podido Registrar",
-                    Toast.LENGTH_LONG
+                    this, "Usuario y contraseña incorrectos",
+                    Toast.LENGTH_SHORT
                 ).show()
-            val  i = Intent(this, MainActivity::class.java)
-                startActivity(i)
             }
+        } else {
+            Toast.makeText(
+                this, "Complete todos los campos",
+                Toast.LENGTH_SHORT
+            ).show()
         }
+    }
 
-        /*var img_AnT = findViewById<ImageView>(R.id.img_An4)
-        img_AnT.setOnClickListener {
-            goAtras()
-        }*/
-        /*var btn_Registro = findViewById<Button>(R.id.btn_Registro)
-        btn_Registro.setOnClickListener {
-            goRegistro()
-        }*/
-        var img_Logoregistro = findViewById<ImageView>(R.id.img_Logoregistro)
-        img_Logoregistro.setOnClickListener {
-            goRegis()
-        }
-    }
-    private fun goAtras(){
-        val i = Intent(this, MainActivity::class.java)
-        startActivity(i)
-    }
-    private fun goRegistro(){
-        val i = Intent(this, MainPerfil::class.java)
-        startActivity(i)
-    }
-    private fun goRegis(){
+    private fun goReverse() {
         val i = Intent(this, MainActivity::class.java)
         startActivity(i)
     }
 }
 
-class ActivityMainRegistroBinding {
 
-}
+
+

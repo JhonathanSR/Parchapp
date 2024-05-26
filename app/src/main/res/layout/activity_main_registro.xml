@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btn_Registro"
+        android:id="@+id/btnRegistro"
         android:layout_width="247dp"
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/img_An4"
+        android:id="@+id/imgR1"
         android:layout_width="63dp"
         android:layout_height="33dp"
         app:layout_constraintEnd_toEndOf="@+id/btnR1"
@@ -108,10 +108,10 @@
         android:layout_width="35dp"
         android:layout_height="32dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_Registro"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegistro"
         app:layout_constraintHorizontal_bias="0.117"
-        app:layout_constraintStart_toStartOf="@+id/btn_Registro"
-        app:layout_constraintTop_toTopOf="@+id/btn_Registro"
+        app:layout_constraintStart_toStartOf="@+id/btnRegistro"
+        app:layout_constraintTop_toTopOf="@+id/btnRegistro"
         app:srcCompat="@drawable/registro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_Musica"
+        android:id="@+id/btnMusica"
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
@@ -44,13 +44,13 @@
         android:fontFamily="monospace"
         android:text="Música"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Cultura"
+        app:layout_constraintEnd_toStartOf="@+id/btnCultura"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMusica" />
 
     <Button
-        android:id="@+id/btn_Cultura"
+        android:id="@+id/btnCultura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
-        android:id="@+id/btn_Restau"
+        android:id="@+id/btnRestau"
         android:layout_width="157dp"
         android:layout_height="51dp"
         android:layout_marginTop="28dp"
@@ -71,13 +71,13 @@
         android:fontFamily="monospace"
         android:text="Restaurantes"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Deportes"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeportes"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgRestaurantes" />
 
     <Button
-        android:id="@+id/btn_Deportes"
+        android:id="@+id/btnDeportes"
         android:layout_width="127dp"
         android:layout_height="54dp"
         android:layout_marginTop="24dp"
@@ -106,7 +106,7 @@
         android:layout_marginStart="72dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Musica"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusica"
         app:srcCompat="@drawable/comidas" />
 
     <ImageView
@@ -117,7 +117,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toEndOf="@+id/imgRestaurantes"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Cultura"
+        app:layout_constraintTop_toBottomOf="@+id/btnCultura"
         app:srcCompat="@drawable/deportes" />
 
     <ImageView
@@ -128,7 +128,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Deportes"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeportes"
         app:srcCompat="@drawable/logout" />
 
     <ImageView
