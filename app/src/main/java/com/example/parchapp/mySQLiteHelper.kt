@@ -45,6 +45,21 @@ class mySQLiteHelper (context: Context): SQLiteOpenHelper(
         cursor.close()
         return count > 0
     }
+    fun modificarDatos(nombre: String, nuevaContrasena: String): Boolean {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put("contrasena", nuevaContrasena)
+        val result = db.update("usuarios", contentValues, "nombre = ?", arrayOf(nombre))
+        db.close()
+        return result > 0
+    }
+
+    fun eliminarDatos(nombre: String): Boolean {
+        val db = this.writableDatabase
+        val result = db.delete("usuarios", "nombre = ?", arrayOf(nombre))
+        db.close()
+        return result > 0
+    }
 
 
 }
