@@ -9,7 +9,7 @@
     tools:context=".MainDeportes">
 
     <ImageButton
-        android:id="@+id/btnD1"
+        android:id="@+id/btnD3"
         android:layout_width="74dp"
         android:layout_height="33dp"
         android:layout_marginTop="28dp"
@@ -21,23 +21,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgA2"
+        android:id="@+id/back4"
         android:layout_width="63dp"
         android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnD1"
-        app:layout_constraintStart_toStartOf="@+id/btnD1"
-        app:layout_constraintTop_toTopOf="@+id/btnD1"
+        app:layout_constraintEnd_toEndOf="@+id/btnD3"
+        app:layout_constraintStart_toStartOf="@+id/btnD3"
+        app:layout_constraintTop_toTopOf="@+id/btnD3"
         app:srcCompat="@drawable/flecha" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/logo4"
         android:layout_width="92dp"
         android:layout_height="92dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.943"
-        app:layout_constraintStart_toEndOf="@+id/btnD1"
+        app:layout_constraintStart_toEndOf="@+id/btnD3"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logosinnombre" />
 
@@ -75,30 +75,18 @@
         app:layout_constraintEnd_toStartOf="@+id/textDeportes"
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo4"
         app:srcCompat="@drawable/polygon2" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
+        android:layout_width="330dp"
+        android:layout_height="130dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDeportes"
-        app:srcCompat="@drawable/deportes" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="247dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#28D82F"
-        android:text="Parchemos"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="597dp" />
+        app:srcCompat="@drawable/micro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

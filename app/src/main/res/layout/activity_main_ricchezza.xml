@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011127"
+    tools:context=".MainRicchezza">
+
+    <ImageButton
+        android:id="@+id/btnD1"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#D9D9D9"
+        android:background="@drawable/curve_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lugarRicchezza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/location"
+        android:text="Cll 11 sur #12D-37"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/textRicchezza"
+        tools:layout_editor_absoluteX="86dp" />
+
+    <TextView
+        android:id="@+id/horaRicchezza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/clock"
+        android:text="Todos los dias 1pm - 10:30pm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/lugarRicchezza"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/descript4"
+        android:layout_width="413dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:text="¡Déjate seducir por el auténtico sabor italiano en Ricchezza Pizzería, donde cada bocado es una experiencia de lujo en tu paladar!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/horaRicchezza"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <ImageView
+        android:id="@+id/back10"
+        android:layout_width="63dp"
+        android:layout_height="33dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnD1"
+        app:layout_constraintStart_toStartOf="@+id/btnD1"
+        app:layout_constraintTop_toTopOf="@+id/btnD1"
+        app:srcCompat="@drawable/flecha" />
+
+    <ImageView
+        android:id="@+id/logo10"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosinnombre" />
+
+    <ImageView
+        android:id="@+id/imgRicchezza"
+        android:layout_width="454dp"
+        android:layout_height="213dp"
+        app:srcCompat="@drawable/ricchezza"
+        tools:layout_editor_absoluteX="-29dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <TextView
+        android:id="@+id/textRicchezza"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/jersey_regular"
+        android:text="Pizzería Riccheza"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintTop_toBottomOf="@id/imgRicchezza"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <Button
+        android:id="@+id/btn_Parchar"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#28D82F"
+        android:text="!Parchemos!"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="639dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

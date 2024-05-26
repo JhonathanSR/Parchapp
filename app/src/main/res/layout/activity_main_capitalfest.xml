@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011127"
+    tools:context=".MainCapitalFest">
+
+    <ImageButton
+        android:id="@+id/btnD1"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#D9D9D9"
+        android:background="@drawable/curve_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back7"
+        android:layout_width="63dp"
+        android:layout_height="33dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnD1"
+        app:layout_constraintStart_toStartOf="@+id/btnD1"
+        app:layout_constraintTop_toTopOf="@+id/btnD1"
+        app:srcCompat="@drawable/flecha" />
+
+    <ImageView
+        android:id="@+id/img_Log7"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosinnombre" />
+
+    <ImageView
+        android:id="@+id/capitalfest"
+        android:layout_width="406dp"
+        android:layout_height="217dp"
+        app:srcCompat="@drawable/capitalfest"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <TextView
+        android:id="@+id/CF"
+        android:layout_width="299dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/jersey_regular"
+        android:text="Capital Fest"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintTop_toBottomOf="@id/capitalfest"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/fechaCF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:drawableStart="@drawable/location"
+        android:text="Viernes 15 de mayo de 2024"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/CF"
+        tools:layout_editor_absoluteX="22dp" />
+
+    <TextView
+        android:id="@+id/horaCF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:drawableStart="@drawable/clock"
+        android:text="6:00 pm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/CF"
+        tools:layout_editor_absoluteX="143dp" />
+
+    <TextView
+        android:id="@+id/descript1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:text="¡Vive una experiencia única en el Capital Fest, donde la música transforma todo!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/fechaCF"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_Parchar"
+        android:layout_width="247dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#28D82F"
+        android:text="!Parchemos!"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="639dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
     android:background="#011127"
     tools:context=".MainCultura">
 
     <ImageButton
-        android:id="@+id/btnD1"
+        android:id="@+id/btnD2"
         android:layout_width="74dp"
         android:layout_height="33dp"
         android:layout_marginTop="28dp"
@@ -22,12 +21,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgA2"
+        android:id="@+id/back3"
         android:layout_width="63dp"
         android:layout_height="33dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnD1"
-        app:layout_constraintStart_toStartOf="@+id/btnD1"
-        app:layout_constraintTop_toTopOf="@+id/btnD1"
+        app:layout_constraintEnd_toEndOf="@+id/btnD2"
+        app:layout_constraintStart_toStartOf="@+id/btnD2"
+        app:layout_constraintTop_toTopOf="@+id/btnD2"
         app:srcCompat="@drawable/flecha" />
 
     <TextView
@@ -57,26 +56,14 @@
         tools:layout_editor_absoluteY="214dp" />
 
     <ImageView
-        android:id="@+id/img_Log"
+        android:id="@+id/logo3"
         android:layout_width="92dp"
         android:layout_height="92dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logosinnombre" />
-
-    <Button
-        android:id="@+id/btn_Parchar"
-        android:layout_width="247dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#28D82F"
-        android:text="!Parchemos!"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="639dp" />
+        app:srcCompat="@drawable/logosinnombre"/>
 
     <ImageButton
         android:id="@+id/right"
@@ -86,7 +73,7 @@
         android:layout_marginTop="156dp"
         android:background="#000000"
         app:layout_constraintStart_toEndOf="@+id/textCultura"
-        app:layout_constraintTop_toBottomOf="@+id/img_Log"
+        app:layout_constraintTop_toBottomOf="@+id/logo3"
         app:srcCompat="@drawable/polygon1" />
 
     <ImageButton
@@ -94,8 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="#000000
-"
+        android:background="#000000"
         app:layout_constraintEnd_toStartOf="@+id/textCultura"
         app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,15 +90,14 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="120dp"
+        android:layout_width="330dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textCultura"
-        app:srcCompat="@drawable/cultura" />
-
+        app:srcCompat="@drawable/oromuseo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
