@@ -28,7 +28,7 @@ class MainMenu : AppCompatActivity() {
 
         var btnMusica = findViewById<Button>(R.id.btnMusica)
         btnMusica.setOnClickListener {
-            goMusic2()
+            goMusica()
         }
         var btnCultura = findViewById<Button>(R.id.btnCultura)
         btnCultura.setOnClickListener {
@@ -47,8 +47,8 @@ class MainMenu : AppCompatActivity() {
             goSalida()
         }
     }
-    private fun goMusic2(){
-        val i = Intent(this, MainMusic2::class.java)
+    private fun goMusica(){
+        val i = Intent(this, MainMusica::class.java)
         startActivity(i)
     }
     private fun goCultura(){
