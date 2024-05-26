@@ -28,10 +28,13 @@ class MainMusica : AppCompatActivity() {
 
         val btnParch1 = findViewById<Button>(R.id.btnParch1)
         btnParch1.setOnClickListener {
-            registerEvento("parchemos")// cambiar parchemos por obtener los datos de imagebutton de musica
+            registerEvento("btnParch1")
         }
         var imgBut1 = findViewById<ImageButton>(R.id.imgBut1)
         imgBut1.setImageResource(R.drawable.capitalfest)
+        imgBut1.setOnClickListener {
+            registerEvento("capitalfest")
+        }
 
         var right2 = findViewById<ImageView>(R.id.right2)
         right2.setOnClickListener {
@@ -41,7 +44,7 @@ class MainMusica : AppCompatActivity() {
     }
     private  fun registerEvento(evento: String){
         val intent = Intent(this, MainHistorial::class.java)
-        intent.putExtra("evento", evento)
+        intent.putExtra("capitalfest", evento)
         startActivity(intent)
     }
     private fun goEvent1(){

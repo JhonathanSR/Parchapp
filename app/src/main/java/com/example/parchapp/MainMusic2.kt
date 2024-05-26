@@ -18,21 +18,5 @@ class MainMusic2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var imgA4 = findViewById<ImageView>(R.id.imgA4)
-        imgA4.setOnClickListener {
-            goMusica()
-        }
-        var imgLogM = findViewById<ImageView>(R.id.imgLogM)
-        imgLogM.setOnClickListener {
-            goPerf()
-        }
-    }
-    private fun goMusica(){
-        val i = Intent(this, MainMusica::class.java)
-        startActivity(i)
-    }
-    private fun goPerf(){
-        val i = Intent(this, MainPerfil::class.java)
-        startActivity(i)
     }
 }
