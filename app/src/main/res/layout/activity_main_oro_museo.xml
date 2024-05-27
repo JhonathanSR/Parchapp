@@ -43,7 +43,7 @@
         android:text="Sumérgete en el brillo dorado de nuestra historia en el Museo del Oro de Bogotá, donde el pasado cobra vida."
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintTop_toBottomOf="@id/horaOro"
         tools:layout_editor_absoluteX="2dp" />
 

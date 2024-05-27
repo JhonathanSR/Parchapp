@@ -28,12 +28,11 @@ class MainMusica : AppCompatActivity() {
 
         val btnParch1 = findViewById<Button>(R.id.btnParch1)
         btnParch1.setOnClickListener {
-            registerEvento("btnParch1")
+            goNewEvent()
         }
         var imgBut1 = findViewById<ImageButton>(R.id.imgBut1)
-        imgBut1.setImageResource(R.drawable.capitalfest)
         imgBut1.setOnClickListener {
-            registerEvento("capitalfest")
+            goCapital()
         }
 
         var right2 = findViewById<ImageView>(R.id.right2)
@@ -47,7 +46,8 @@ class MainMusica : AppCompatActivity() {
         intent.putExtra("capitalfest", evento)
         startActivity(intent)
     }
-    private fun goEvent1(){
+    private fun goNewEvent(){
+        val i = Intent(this,MainNewEvent::class.java)
 
     }
     private fun goReverse2(){
@@ -55,8 +55,8 @@ class MainMusica : AppCompatActivity() {
         startActivity(i)
 
     }
-    private fun goInscrito(){
-
+    private fun goCapital(){
+        val i = Intent(this,MainCapitalFest::class.java)
     }
     private fun goCultura(){
         val i = Intent(this, MainCultura::class.java)

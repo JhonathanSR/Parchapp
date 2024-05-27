@@ -2,6 +2,7 @@ package com.example.parchapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.sax.StartElementListener
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
@@ -29,15 +30,25 @@ class MainCultura : AppCompatActivity() {
         btn_right.setOnClickListener {
             goResta()
         }
+
+        var btn_Museo = findViewById<ImageButton>(R.id.Museo)
+        btn_Museo.setOnClickListener {
+            goMuseo()
+        }
     }
-    private fun goMusica(){
+
+    private fun goMusica() {
         val i = Intent(this, MainMusica::class.java)
         startActivity(i)
     }
 
-    private fun goResta(){
+    private fun goResta() {
         val i = Intent(this, MainRestaurantes::class.java)
         startActivity(i)
+    }
 
+    private fun goMuseo(){
+        val i = Intent(this, MainOroMuseo::class.java)
+        startActivity(i)
     }
 }

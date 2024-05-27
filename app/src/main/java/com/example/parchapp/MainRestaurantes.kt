@@ -19,20 +19,31 @@ class MainRestaurantes : AppCompatActivity() {
             insets
         }
         val btn_left2 = findViewById<ImageButton>(R.id.left2)
-        btn_left2.setOnClickListener{
+        btn_left2.setOnClickListener {
             goCultura()
         }
         val btn_right2 = findViewById<ImageButton>(R.id.right2)
         btn_right2.setOnClickListener {
             goDeport()
         }
+
+        val btn_Ricchezza = findViewById<ImageButton>(R.id.Ricchezza)
+        btn_Ricchezza.setOnClickListener {
+            goRicchezza()
+        }
     }
-    private fun goCultura(){
+
+    private fun goCultura() {
         val i = Intent(this, MainCultura::class.java)
         startActivity(i)
     }
-    private fun goDeport(){
+
+    private fun goDeport() {
         val i = Intent(this, MainDeportes::class.java)
         startActivity(i)
+    }
+
+    private fun goRicchezza(){
+        val i = Intent(this,MainRicchezza::class.java)
     }
 }

@@ -22,8 +22,15 @@ class MainDeportes : AppCompatActivity() {
         btn_left1.setOnClickListener(){
             goResta()
     }
+        val btn_micrito = findViewById<ImageButton>(R.id.micrito)
+        btn_micrito.setOnClickListener {
+            goMicrito()
+        }
 
 }
+    private fun goMicrito(){
+        val i = Intent(this, MainMicrito::class.java)
+    }
     private fun goResta(){
         val i = Intent(this, MainRestaurantes::class.java)
         startActivity(i)
