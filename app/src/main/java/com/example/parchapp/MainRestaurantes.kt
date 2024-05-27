@@ -45,5 +45,6 @@ class MainRestaurantes : AppCompatActivity() {
 
     private fun goRicchezza(){
         val i = Intent(this,MainRicchezza::class.java)
+        startActivity(i)
     }
 }

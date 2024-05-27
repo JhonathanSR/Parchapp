@@ -30,6 +30,7 @@ class MainDeportes : AppCompatActivity() {
 }
     private fun goMicrito(){
         val i = Intent(this, MainMicrito::class.java)
+        startActivity(i)
     }
     private fun goResta(){
         val i = Intent(this, MainRestaurantes::class.java)

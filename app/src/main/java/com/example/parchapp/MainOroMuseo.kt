@@ -27,5 +27,6 @@ class MainOroMuseo : AppCompatActivity() {
     }
     private fun goNewEvent(){
         val i = Intent(this, MainNewEvent::class.java)
+        startActivity(i)
     }
 }

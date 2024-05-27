@@ -57,6 +57,7 @@ class MainMusica : AppCompatActivity() {
     }
     private fun goCapital(){
         val i = Intent(this,MainCapitalFest::class.java)
+        startActivity(i)
     }
     private fun goCultura(){
         val i = Intent(this, MainCultura::class.java)
