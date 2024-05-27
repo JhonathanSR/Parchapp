@@ -3,6 +3,7 @@ package com.example.parchapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,10 +24,18 @@ class MainOroMuseo : AppCompatActivity() {
         btn_Museo.setOnClickListener{
             goNewEvent()
         }
+        var back9 = findViewById<ImageView>(R.id.back9)
+        back9.setOnClickListener {
+            goCultura()
+        }
 
     }
     private fun goNewEvent(){
         val i = Intent(this, MainNewEvent::class.java)
+        startActivity(i)
+    }
+    private fun goCultura(){
+        val i = Intent(this, MainCultura::class.java)
         startActivity(i)
     }
 }

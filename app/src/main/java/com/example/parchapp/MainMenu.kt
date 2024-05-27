@@ -46,6 +46,10 @@ class MainMenu : AppCompatActivity() {
         img_Exit.setOnClickListener {
             goSalida()
         }
+        var img_Log = findViewById<ImageView>(R.id.img_Log)
+        img_Log.setOnClickListener {
+            goPerf()
+        }
     }
     private fun goMusica(){
         val i = Intent(this, MainMusica::class.java)
@@ -65,6 +69,10 @@ class MainMenu : AppCompatActivity() {
     }
     private fun goSalida(){
         val i = Intent(this, MainActivity::class.java)
+        startActivity(i)
+    }
+    private fun goPerf(){
+        val i = Intent(this, MainPerfil::class.java)
         startActivity(i)
     }
 }

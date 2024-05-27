@@ -3,6 +3,7 @@ package com.example.parchapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,9 +23,17 @@ class MainMicrito : AppCompatActivity() {
         btn_parchar.setOnClickListener {
             goNewEvent()
         }
+        val back8 = findViewById<ImageView>(R.id.back8)
+        back8.setOnClickListener {
+            goDeport()
+        }
     }
     private fun goNewEvent(){
         val i = Intent(this, MainNewEvent::class.java)
+        startActivity(i)
+    }
+    private fun goDeport(){
+        val i = Intent(this, MainDeportes::class.java)
         startActivity(i)
     }
 }

@@ -3,6 +3,7 @@ package com.example.parchapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,9 +24,17 @@ class MainCapitalFest : AppCompatActivity() {
         btn_parchar.setOnClickListener{
             goNewEvent()
         }
+        var back7 = findViewById<ImageView>(R.id.back7)
+        back7.setOnClickListener {
+            goMusica()
+        }
     }
     private fun goNewEvent(){
         val i = Intent(this, MainNewEvent::class.java)
+        startActivity(i)
+    }
+    private fun goMusica(){
+        val i = Intent(this, MainMusica::class.java)
         startActivity(i)
     }
 
